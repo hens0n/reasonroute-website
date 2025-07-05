@@ -2,7 +2,7 @@
 baseURL = "https://reasonroute.com/"
 languageCode = "en-us"
 title = "Reason Route"
-theme = "bigspring-light-hugo"
+# theme = "bigspring-light-hugo"
 
 [params]
   logo = "images/logo.png"
