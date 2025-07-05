@@ -1,0 +1,9 @@
+
+baseURL = "https://reasonroute.com/"
+languageCode = "en-us"
+title = "Reason Route"
+theme = "bigspring-light-hugo"
+
+[params]
+  logo = "images/logo.png"
+  description = "We build AI-powered educational apps."
