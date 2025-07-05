@@ -2,8 +2,42 @@
 baseURL = "https://reasonroute.com/"
 languageCode = "en-us"
 title = "Reason Route"
-#  theme = "bigspring-light-hugo"
+theme = "tailbliss"
 
 [params]
   logo = "images/logo.png"
   description = "We build AI-powered educational apps."
+
+# Completely override theme menu - only include what we want
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+
+  # Footer menu (keeping relevant items)
+  [[menu.footer]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.footer]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+
+# Disable categories dropdown and other unwanted features
+[menu.categories]
+# Empty categories menu
+
+[menu.dropdown] 
+# Empty dropdown menu

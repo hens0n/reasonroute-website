@@ -1,0 +1,68 @@
+baseURL: 'https://reasonroute.com/'
+title: Reason Route
+languageCode: en-us
+theme: tailbliss
+
+params:
+  logo: "images/logo.png"
+  description: "We build AI-powered educational apps."
+  # Update Our Mission section (P1)
+  p1:
+    heading: "Our Mission"
+    image: "images/pages/our-mission.png"
+    content:
+      - text: "At Reason Route, we're transforming education through the power of artificial intelligence. We believe every learner deserves personalized, engaging experiences that develop critical thinking skills and ignite intellectual curiosity."
+      - text: "Our innovative educational apps adapt to individual learning styles and paces, creating dynamic pathways that challenge students to think deeper, question more, and discover their full potential."
+      - text: "We're not just building apps—we're building minds. Join us in revolutionizing how the world learns, one thoughtful interaction at a time."
+  # Disable Hacktoberfest section (P2)
+  p2:
+    heading: ""
+    content: []
+  # Disable blog section on homepage
+  p4:
+    heading: ""
+    content: []
+  # Disable investors section
+  p3:
+    heading: ""
+    content: []
+    links: []
+    logos: []
+  # Disable stay up to date section
+  p5:
+    heading: ""
+    content: []
+  # Disable the stay up to date section completely
+  disable_stay_uptodate: true
+
+# Override theme menu completely - only show what we want
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+  # Empty categories and dropdown menus to override theme defaults
+  categories: []
+  dropdown: []

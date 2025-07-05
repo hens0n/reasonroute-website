@@ -1,0 +1,20 @@
+{
+  "name": "reasonroute-website",
+  "version": "1.0.0",
+  "description": "Reason Route Website",
+  "main": "index.js",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "alpinejs": "^3.14.3",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo --minify"
+  },
+  "author": "Reason Route",
+  "license": "MIT"
+}
