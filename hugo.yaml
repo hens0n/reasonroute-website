@@ -4,10 +4,10 @@ languageCode: en-us
 theme: tailbliss
 
 params:
-  logo: "images/logo.png"
+  logo: "images/hero-askwhy.png"
+  # hero_image: "images/hero-askwhy.png"
   description: "We build AI-powered educational apps."
   moto: "Super Fast, and Flexible"
-  hero_image: "images/hero-askwhy.png"
   favicon: "/favicon.ico"
   apple_touch_icon: "/apple-touch-icon.png"
   favicon_16: "/favicon-16x16.png"
