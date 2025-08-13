@@ -6,6 +6,10 @@ theme: tailbliss
 params:
   logo: "images/logo.png"
   description: "We build AI-powered educational apps."
+  favicon: "/favicon.ico"
+  apple_touch_icon: "/apple-touch-icon.png"
+  favicon_16: "/favicon-16x16.png"
+  favicon_32: "/favicon-32x32.png"
   # Update Our Mission section (P1)
   p1:
     heading: "Our Mission"
