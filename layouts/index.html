@@ -16,14 +16,23 @@
                     </p>
                 </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
-
-                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
-                    {{ $large := ($hero.Fill "576x576 webp q90") }}
-
-                    <img srcset="
-                        {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
-                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                    {{ if .Site.Params.hero_image }}
+                        {{ $hero := resources.Get .Site.Params.hero_image }}
+                        {{ if $hero }}
+                            {{ $thumb := ($hero.Fill "400x400 webp q90") }}
+                            {{ $large := ($hero.Fill "576x576 webp q90") }}
+                            <img srcset="
+                                {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
+                                {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="Hero Image" class="w-full max-w-xl mx-auto rounded-lg" />
+                        {{ end }}
+                    {{ else }}
+                        {{ $hero := resources.GetMatch "images/hero-askwhy.png" }}
+                        {{ $thumb := ($hero.Fill "400x400 webp q90") }}
+                        {{ $large := ($hero.Fill "576x576 webp q90") }}
+                        <img srcset="
+                            {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
+                            {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                    {{ end }}
                 </div>
             </div>
         </div>
